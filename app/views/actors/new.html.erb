@@ -1,4 +1,4 @@
-    <%= form_for @actor do |f| %>
+        <%= form_for @actor do |f| %>
     <div class="input">
     	<%= f.text_field :name, placeholder: "Nombre del actor" %>
     </div>
@@ -20,8 +20,8 @@
     </div>
 
     <div class="input">
-    	<h4>Marcar si el actor esta con vida</h4>
-    	<%= f.check_box :alive, {}, true, false%>
+    	<p>Marcar si el actor esta con vida : <%= f.check_box :alive, {}, true, false%></p>
+    	
     </div>
 
     <div class="input">
@@ -30,7 +30,7 @@
 
     <div class="input">
     	<%= f.text_field :death_place, placeholder: "Lugar de fallecimiento" %>
-    </div>\
+    </div>
 
     <div class="boton">
     	<%= f.submit  %>
